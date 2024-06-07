@@ -1,0 +1,52 @@
+p.text:not(:empty){
+    color: palegreen;
+}
+
+p.text:empty::after{
+    content: attr(title);
+}
+
+#id::before{
+    content: 'end';
+    color: plum;
+    text-decoration: none;
+}
+
+p.main-link::first-line{
+    color:darkviolet;
+}
+
+p:first-of-type {
+    text-decoration: line-through;
+}
+
+.main-link{
+    color: red;
+    text-decoration: none;
+}
+
+.main-link:hover{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+.main-link:active{
+    text-decoration: line-through;
+}
+
+.main-link:visited{
+    text-decoration: line-through;
+    color: gray;
+}
+
+input{
+    color:blue;
+}
+
+input:focus{
+    color: red;
+}
+
+input:disabled{}
